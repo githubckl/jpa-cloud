@@ -14,5 +14,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 @FeignClient(name = "PROVIDER")
 public interface OpenFeignService {
     @GetMapping("customer/getOne")
-    public Customer getOne(@RequestParam("id") Long id);
+    public Customer getOne(
+//            加入requestParam注解,防止openFeign将get变为post
+            @RequestParam("id") Long id);
 }

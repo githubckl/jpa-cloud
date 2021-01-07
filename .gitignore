@@ -1,0 +1,6 @@
+# Project exclude paths
+/cloud-api-commons/target/
+/consumer80/target/
+/eureka7001/target/
+/eureka7002/target/
+/provider8080/target/
